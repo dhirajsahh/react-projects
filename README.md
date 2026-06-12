@@ -17,7 +17,7 @@ A simple, interactive accordion component that allows users to expand and collap
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <repo-url>
+   git clone <https://github.com/dhirajsahh/react-projects.git>
    ```
 2. Install dependencies:
    ```bash
