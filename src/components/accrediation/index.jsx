@@ -21,7 +21,7 @@ const Index = () => {
   return (
     <div className="container">
       <button onClick={() => setShowMultipleItems(!showMultipleItems)}>
-        show multiple accrediation
+        show multiple accordion
       </button>
       {data?.map((dataItem) => {
         return (
