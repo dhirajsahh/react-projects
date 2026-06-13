@@ -27,7 +27,7 @@ From $ARGUMENTS extract:
    - Lowercase, kebab-case
    - Only a-z, 0-9 and -
    - Maximum 40 characters
-   - Example: registration, login-logout
+   - Example: accordian, reviews
 
 4. `branch_name` — format: `project/<project_slug>`
    - Example: `project/accoridian`

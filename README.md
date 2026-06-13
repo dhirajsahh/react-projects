@@ -1,35 +1,111 @@
-# React Projects Collection
+# ⚛️ React Projects Collection
 
-This repository is a collection of React projects I'm building as I learn and practice the library.
+A curated collection of React components and mini-projects developed as part of a learning journey to master the React ecosystem, state management, and modern UI patterns.
+
+## 📌 Table of Contents
+- [🚀 Projects](#-projects)
+- [🤖 Claude Automation](#-claude-automation)
+- [📂 Project Structure](#-project-structure)
+- [🛠️ Getting Started](#-getting-started)
+- [🌟 Future Enhancements](#-future-enhancements)
+
+---
 
 ## 🚀 Projects
 
 ### 1. Accordion Component
-A flexible, interactive accordion component that allows users to expand and collapse sections of content.
-- **Features**: 
-  - Support for both single and multiple item expansion.
-  - Toggle switch to switch between single and multiple expansion modes.
-  - State-driven visibility and clean styling.
-- **Tech Stack**: React, Vite, CSS.
+A professional, interactive accordion component designed for presenting content in a collapsible manner—ideal for FAQs, documentation, and settings panels.
+
+**✨ Key Features:**
+- **Flexible Expansion Modes**: Supports both "Single Item" (only one open at a time) and "Multiple Items" (multiple open simultaneously) modes.
+- **Dynamic Toggle**: A built-in switch to toggle between expansion modes instantly.
+- **State-Driven UI**: Fully managed via React hooks for seamless transitions and visibility.
+- **Responsive Design**: Clean, modern CSS styling that adapts to various screen sizes.
+
+**🛠️ Tech Stack:**
+- **Frontend**: React 19
+- **Build Tool**: Vite
+- **Styling**: CSS3
+
+---
+
+## 🤖 Claude Automation
+
+This repository leverages **Claude Code** for enhanced developer productivity. I have implemented custom automation to streamline the project setup process.
+
+### `/create-branch` Command
+A custom slash command that automates the boilerplate of starting a new project feature.
+
+**What it does:**
+1. Verifies the working directory is clean.
+2. Parses project details (number and name) from arguments.
+3. Generates a standardized branch name (e.g., `project/accordion`).
+4. Switches to `main` and pulls the latest changes from the remote.
+5. Creates and switches to the new feature branch.
+
+**Usage:**
+```bash
+/create-branch "1 accordion"
+```
+
+---
+
+## 📂 Project Structure
+
+The project is organized to maintain scalability and separation of concerns:
+
+```text
+project-root/
+├── .claude/               # Claude Code configuration and custom commands
+│   └── commands/          # Automation scripts (e.g., create-branch)
+├── public/                # Static assets (icons, favicons)
+├── src/
+│   ├── components/       # Reusable UI components
+│   │   └── accrediation/  # Accordion component source
+│   │       ├── index.jsx  # Component logic & structure
+│   │       ├── data.js    # Mock data for the accordion
+│   │       └── style.css  # Component-specific styling
+│   ├── App.jsx           # Main application entry point
+│   ├── main.jsx          # React DOM mounting logic
+│   └── index.css         # Global styles
+├── package.json          # Project dependencies and scripts
+└── vite.config.js        # Vite configuration
+```
+
+---
 
 ## 🛠️ Getting Started
 
 ### Prerequisites
-- Node.js installed on your machine.
+- **Node.js** (LTS version recommended)
+- **npm** (comes bundled with Node.js)
 
-### Installation
-1. Clone the repository:
+### Installation & Setup
+
+1. **Clone the repository**
    ```bash
-   git clone <https://github.com/dhirajsahh/react-projects.git>
+   git clone https://github.com/dhirajsahh/react-projects.git
+   cd react-projects
    ```
-2. Install dependencies:
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
-3. Start the development server:
+
+3. **Launch development server**
    ```bash
    npm run dev
    ```
+   Open the provided local URL (usually `http://localhost:5173`) in your browser.
 
 ---
-*This is my first project in this series!*
+
+## 🌟 Future Enhancements
+- [ ] Implement accessibility (WAI-ARIA) for better screen-reader support.
+- [ ] Add smooth CSS transitions for expanding/collapsing sections.
+- [ ] Implement a theme switcher (Light/Dark mode).
+- [ ] Create a more generic `Accordion` component that accepts `items` as props.
+
+---
+*Developed with ❤️ by [dhirajsahh](https://github.com/dhirajsahh)*
