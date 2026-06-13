@@ -5,8 +5,11 @@ This repository is a collection of React projects I'm building as I learn and pr
 ## 🚀 Projects
 
 ### 1. Accordion Component
-A simple, interactive accordion component that allows users to expand and collapse sections of content.
-- **Features**: State-driven visibility, interactive headers, and clean styling.
+A flexible, interactive accordion component that allows users to expand and collapse sections of content.
+- **Features**: 
+  - Support for both single and multiple item expansion.
+  - Toggle switch to switch between single and multiple expansion modes.
+  - State-driven visibility and clean styling.
 - **Tech Stack**: React, Vite, CSS.
 
 ## 🛠️ Getting Started
