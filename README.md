@@ -29,6 +29,22 @@ A professional, interactive accordion component designed for presenting content 
 
 ---
 
+### 2. Random Color Generator
+A fun and interactive tool that generates random colors in both Hex and RGB formats, dynamically updating the page background.
+
+**✨ Key Features:**
+- **Format Switching**: Easily toggle between Hex and RGB color representations.
+- **Dynamic Background**: The entire page background changes instantly to match the generated color.
+- **Real-time Value Display**: Clearly shows the generated color code on the screen.
+- **State-Managed UI**: Uses React hooks to track selected format and generated color values.
+
+**🛠️ Tech Stack:**
+- **Frontend**: React 19
+- **Build Tool**: Vite
+- **Styling**: CSS-in-JS (Inline styles)
+
+---
+
 ## 🤖 Claude Automation
 
 This repository leverages **Claude Code** for enhanced developer productivity. I have implemented custom automation to streamline the project setup process.
@@ -61,10 +77,12 @@ project-root/
 ├── public/                # Static assets (icons, favicons)
 ├── src/
 │   ├── components/       # Reusable UI components
-│   │   └── accrediation/  # Accordion component source
-│   │       ├── index.jsx  # Component logic & structure
-│   │       ├── data.js    # Mock data for the accordion
-│   │       └── style.css  # Component-specific styling
+│   │   ├── accrediation/  # Accordion component source
+│   │   │   ├── index.jsx  # Component logic & structure
+│   │   │   ├── data.js    # Mock data for the accordion
+│   │   │   └── style.css  # Component-specific styling
+│   │   └── randomColor/    # Random Color Generator source
+│   │       └── index.jsx  # Component logic & structure
 │   ├── App.jsx           # Main application entry point
 │   ├── main.jsx          # React DOM mounting logic
 │   └── index.css         # Global styles
