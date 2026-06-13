@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Index from './components/accrediation'
+import RandomColor from './components/randomColor'
 
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
   return (
     <>
       
-      <Index />
+      {/* <Index /> */}
+      <RandomColor />
 
     </>
   )
